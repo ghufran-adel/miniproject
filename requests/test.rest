@@ -1,1 +1,19 @@
+GET http://localhost:3001/api/currency/hello
+###
 GET http://localhost:3001/api/currency/
+###
+GET http://localhost:3001/api/currency/1
+###
+POST http://localhost:3001/api/currency/
+content-type: application/json
+
+{
+    "id": 4,
+    "currencyCode": "RY",
+    "country": "YEMEN",
+    "conversionRate": 0.23
+}
+###
+PUT http://localhost:3001/api/currency/1/0.3
+###
+DELETE http://localhost:3001/api/currency/1
